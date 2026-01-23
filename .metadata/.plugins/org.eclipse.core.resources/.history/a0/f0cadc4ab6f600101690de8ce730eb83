@@ -1,0 +1,20 @@
+package com.ibm.client.cui;
+
+public class MainApp {
+	
+	public static void main(String[] args) {
+		System.out.println("Start");
+		
+		String str1, str2, str3;
+		
+//		str1 = "IBM";
+//		str2 = "IBM";
+		str1 = new String("IBM"); //creating new object 
+		str2 = new String("IBM");
+		
+		System.out.println(str1== str2);
+		//for first time true but second one false 
+		System.out.println(str1.equals(str2));
+		System.out.println("End");
+	}
+}

@@ -1,0 +1,17 @@
+package com.ibm.client.cui;
+
+public class MainApp {
+	
+	public static void main(String[] args) {
+		System.out.println("Start");
+		
+		String str1, str2, str3;
+		
+		str1 = "IBM";
+		str2 = "IBM";
+		str3 = "ibm";
+		
+		System.out.println(str1);
+		System.out.println("End");
+	}
+}

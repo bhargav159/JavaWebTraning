@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;nums&apos; in &apos;com.ibm.arrays.Application.main(...)&apos; to &apos;numbers&apos;&#x0D;&#x0A;- Original project: &apos;arrays&apos;&#x0D;&#x0A;- Original element: &apos;com.ibm.arrays.Application.main(String[]).nums&apos;&#x0D;&#x0A;- Renamed element: &apos;nums&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;nums&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ibm.arrays{Application.java[Application~main~\[QString;@nums!109!119!113!116!\[I!0!false" name="numbers" references="true" stamp="1769058331592" version="1.0"/>
+</session>
