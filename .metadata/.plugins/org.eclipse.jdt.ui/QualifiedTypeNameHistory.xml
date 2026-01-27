@@ -6,6 +6,19 @@
     <fullyQualifiedTypeName name="com.ibm.encapsulation.Student"/>
     <fullyQualifiedTypeName name="com.ibm.encapsulation.pack1.Base1"/>
     <fullyQualifiedTypeName name="com.ibm.enums.types.Apples"/>
-    <fullyQualifiedTypeName name="com.ibm.oops.payroll.Employee"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.ibm.oops.payroll.Intern"/>
+    <fullyQualifiedTypeName name="com.ibm.oops.payroll.HR"/>
     <fullyQualifiedTypeName name="com.ibm.oops.payroll.PermanentEmployee"/>
+    <fullyQualifiedTypeName name="com.ibm.oops.payroll.Employee"/>
+    <fullyQualifiedTypeName name="com.ibm.oops.payroll.Finance"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
 </qualifiedTypeNameHistroy>

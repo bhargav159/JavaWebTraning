@@ -11,7 +11,7 @@ class Test{
 	}
 	
 	{
-		System.out.println("Inlie block called");
+		System.out.println("Inline block called");
 	}
 }
 
