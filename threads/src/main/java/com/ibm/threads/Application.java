@@ -1,35 +1,35 @@
-//package com.ibm.threads;
-//
-//public class Application
-//{
-//	public static void main( String[] args )
-//	{
-//		Thread mainthread = Thread.currentThread();
-//		System.out.println(mainthread);
-//		try {
-//			mainthread.sleep(1000);
-//		}catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
-//		
-//		Thread thread1 = new Thread();
-//		System.out.println("New thread");
-//		System.out.println(thread1);
-//		System.out.println(thread1.getState());
-//		
-//		thread1.start();
-//		System.out.println(thread1.getState());
-//		
-//		try {
-//			Thread.sleep(1000);
-//		}catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
-//		
-//		System.out.println(thread1.getState());
-//		System.out.println("End");
-//	}
-//}
+package com.ibm.threads;
+
+public class Application
+{
+	public static void main( String[] args )
+	{
+		Thread mainthread = Thread.currentThread();
+		System.out.println(mainthread);
+		try {
+			mainthread.sleep(1000);
+		}catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		Thread thread1 = new Thread();
+		System.out.println("New thread");
+		System.out.println(thread1);
+		System.out.println(thread1.getState());
+		
+		thread1.start();
+		System.out.println(thread1.getState());
+		
+		try {
+			Thread.sleep(1000);
+		}catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println(thread1.getState());
+		System.out.println("End");
+	}
+}
 
 //package com.ibm.threads;
 //
@@ -161,3 +161,4 @@
 //		System.out.println("End");
 //	}
 //}
+

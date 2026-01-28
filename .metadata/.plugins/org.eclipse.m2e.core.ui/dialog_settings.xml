@@ -6,6 +6,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Bhargav\eclipse-workspace\exceptions\src\main\java\com\ibm\exceptions\Application.java"/>
 			<item value="C:\Bhargav\eclipse-workspace\oops"/>
 			<item value="C:\Bhargav\eclipse-workspace\enums\src\main\java\com\ibm\enums\types\Apples.java"/>
 			<item value="C:\Bhargav\eclipse-workspace\classobjects"/>
@@ -33,10 +34,17 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.ibm.collections"/>
+			<item value="com.ibm.objectclass"/>
+			<item value="com.ibm.interfaces"/>
 		</list>
 		<list key="groupId">
+			<item value="com.ibm"/>
 		</list>
 		<list key="artifactId">
+			<item value="collections"/>
+			<item value="objectclass"/>
+			<item value="interfaces"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
