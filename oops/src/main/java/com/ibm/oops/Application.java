@@ -1,3 +1,4 @@
+//Abstraction example
 //package com.ibm.oops;
 //
 //import com.ibm.oops.payroll.Employee;
@@ -22,31 +23,23 @@
 //import java.util.LinkedList;
 //import java.util.List;
 //
-//import com.ibm.oops.payroll.Employee;
-//
-//import com.ibm.oops.payroll.PermanentEmployee;
-//
 //public class Application {
 //	public static void main(String[] args) {
-//		
-//		float f = (float) 10.2; //explicit type casting
 //		
 ////		Calendar calendar = new Calendar(); error because calendar is abstract class 
 //		
 //		Calendar calendar = new GregorianCalendar();  // up casting 
 //		System.out.println(calendar.get(Calendar.DAY_OF_MONTH));
 //		
-//		
-//		GregorianCalendar gregorianCalendar = (GregorianCalendar)calendar; //down casting
+//		GregorianCalendar gregorianCalendar = (GregorianCalendar)calendar; 
 //		
 //		List<String> list = new LinkedList<String>();
 //		
-////		ArrayList<String> arrayList = (ArrayList<String>) list;  //runtime error because of class cast exception 
-//		if(list instanceof ArrayList) { // we check if list is instance of arraylist 
+////		Both Linkedlist and arrayList implements list interface(siblings) thus downcasting not possible between siblings
+////		ArrayList<String> arrayList = (ArrayList<String>) list;  //runtime error class cast exception 
+//		if(list instanceof ArrayList) { // we check if likedList is instance of arraylist 
 //			ArrayList<String> arrayList = (ArrayList<String>) list;
 //		}
-//		
-//		
 //	}
 //}
 

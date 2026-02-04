@@ -7,16 +7,18 @@ public class TypeCasting {
 		int num1 = 2000;
 		double num2 = 3000.55;
 		double sum = num1 + num2;
-		// int sum1 = num1 + num2; // error because double to int not possible 
+		
+//		error because double to int not possible
+//		int sum1 = num1 + num2;  
 		System.out.println("Sum of "+num1+" and "+ num2+" is "+sum);
 		
 		//explicit type casting 
 		double doubleNum = (double)num1;
-
+		
 		System.out.println("The value of " + num1 + " after converting to the double is " + doubleNum);
 		
 		// Type casting double to int
-		 int convertedInt =(int) doubleNum; 
+	    int convertedInt = (int) doubleNum;
 		
 		System.out.println("The value of " + doubleNum + " after converting to the int again is " + convertedInt);
 		}
