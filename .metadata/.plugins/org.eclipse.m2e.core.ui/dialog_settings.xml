@@ -6,6 +6,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Bhargav\eclipse-workspace\springmvc"/>
 			<item value="C:\Bhargav\eclipse-workspace\interfaces"/>
 			<item value="C:\Bhargav\eclipse-workspace\iostreams\src\main\resources\ibm\file2.txt"/>
 			<item value="C:\Bhargav\eclipse-workspace\lambdas"/>
@@ -72,6 +73,20 @@
 		</list>
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Bhargav\eclipse-workspace"/>
+			<item value="C:\Bhargav\eclipse-workspace\"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
 		</list>
 	</section>
 </section>

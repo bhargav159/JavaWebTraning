@@ -25,5 +25,5 @@
 
 	</bean>
 
-<!-- class="com.ibm.springjdbcbasics.templates.EmployeeJDBCTemplate" -->
+
 </beans>

@@ -2,4 +2,7 @@
 <typeInfoHistroy>
     <typeInfo handle="=interfaces/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ibm.interfaces{Flyer.java[Flyer" modifiers="513" timestamp="1769487246550"/>
     <typeInfo handle="=interfaces/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ibm.interfaces{Sailer.java[Sailer" modifiers="513" timestamp="1769491068011"/>
+    <typeInfo handle="=springmvc/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ibm.spring.springmvc.services{EmployeeService.java[EmployeeService" modifiers="513" timestamp="1770186700294"/>
+    <typeInfo handle="=springmvc/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ibm.spring.springmvc.dao{EmployeeDao.java[EmployeeDao" modifiers="513" timestamp="1770188587861"/>
+    <typeInfo handle="=springmvc/C:\/Users\/DavalaBhargavKrishna\/.m2\/repository\/org\/springframework\/spring-webmvc\/5.3.39\/spring-webmvc-5.3.39.jar=/maven.pomderived=/true=/=/org.eclipse.jst.component.archivename=/spring-webmvc-5.3.39.jar=/=/maven.groupId=/org.springframework=/=/maven.artifactId=/spring-webmvc=/=/maven.version=/5.3.39=/=/maven.scope=/compile=/=/maven.pomderived=/true=/=/org.eclipse.jst.component.dependency=/\/WEB-INF\/lib=/&lt;org.springframework.web.servlet.config.annotation(WebMvcConfigurer.class[WebMvcConfigurer" modifiers="1537" timestamp="1770189049322"/>
 </typeInfoHistroy>

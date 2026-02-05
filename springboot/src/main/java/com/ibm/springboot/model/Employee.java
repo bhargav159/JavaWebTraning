@@ -8,11 +8,11 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="employyes")
+@Table(name="employees")
 public class Employee {
 	@Id 
-	@GeneratedValue(strategy = GenerationType.AUTO) 
-	private long id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY) 
+	private Long id;
 	
 	@Column(name="first_name")
 	private String firstName;
@@ -27,7 +27,7 @@ public class Employee {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Employee(long id, String firstName, String lastName, String email) {
+	public Employee(Long id, String firstName, String lastName, String email) {
 		this.id = id;
 		this.email= email;
 		this.firstName = firstName;
@@ -40,7 +40,7 @@ public class Employee {
 	}
 	
 	
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getFirstName() {

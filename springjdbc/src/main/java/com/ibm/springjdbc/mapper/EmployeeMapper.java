@@ -12,7 +12,7 @@ public class EmployeeMapper implements RowMapper<Employee> {
 	@Override
 	public Employee mapRow(ResultSet resultSet, int rowNum) throws SQLException {
 		
-//		Instead of class Employee is considered as Entity as it has fields matching DB Columns 
+//		Instead of class, Employee is considered as Entity as it has fields matching DB Columns 
 		Employee employee = new Employee();
 		employee.setId(resultSet.getInt("id"));
 		employee.setFirstname(resultSet.getString("firstname"));
