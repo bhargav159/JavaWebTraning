@@ -8,7 +8,6 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
 
-    
 	/**
 	* Handles requests made to the root of the site
 	*
@@ -17,6 +16,13 @@ public class HomeController {
     @RequestMapping(path = "/", method = RequestMethod.GET)
     public ModelAndView mostrarHome() {
         return new ModelAndView("home", "message", "Hello IBMer !");
+    }
+    
+//  @RequestMapping(value = "/about", method = RequestMethod.GET)
+    @RequestMapping("/about")
+    public String showSearch() {
+        System.out.println("LOG: Navigation -> Loading About Page");
+        return "about"; 
     }
     
 //    @RequestMapping(path = "/", method = RequestMethod.GET)

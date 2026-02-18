@@ -1,5 +1,6 @@
 package com.ibm.arrays;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Constructor;
 
 public class Application1 {
@@ -8,11 +9,11 @@ public class Application1 {
 		System.out.println("Annotation information:");
 		
 		// process class Annotation
-		Class<CustomAnnotationUsage> clazz = CustomAnnotationUsage.class;
+		Class<CustomAnnotationUsage> clazz  = CustomAnnotationUsage.class;
 		CustomAnnotation classAnn = clazz.getAnnotation(CustomAnnotation.class);
-		
+//		
 		if(classAnn != null) {
-			printAnnotation("Class",classAnn);
+			printAnnotation("Class Type Annotation",classAnn);
 		}
 		
 		try {
@@ -21,7 +22,7 @@ public class Application1 {
 			CustomAnnotation constAnn = constructor.getAnnotation(CustomAnnotation.class);
 			
 			if(constAnn != null) {
-				printAnnotation("Constructor",constAnn);
+				printAnnotation("Constructor type Annotation",constAnn);
 			}
 		}catch(SecurityException e) {
 			e.printStackTrace();

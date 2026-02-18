@@ -9,7 +9,7 @@
 </head>
 <body>
 
-	<form:form action="save" method="post" modelAttribute="employee">
+	<form:form action="save" method="post" modelAttribute="employeee">
 		<table>
 			<tr>
 				<td>Name:</td>

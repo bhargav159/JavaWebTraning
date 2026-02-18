@@ -6,8 +6,9 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.TYPE})
-// Target is used to restrict the usage of annotations from {Class,Constructor, Field}
+// retention policy is to know when to execute the annotations (runtime,source-compile time etc)
+@Target({ElementType.CONSTRUCTOR})
+// Target is used to restrict the usage place of annotations from {Class,Constructor, Field}
 
 public @interface CustomAnnotation {
 	String name();

@@ -5,30 +5,32 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<!-- Información del Proyecto -->
+	<!-- Project Information -->
 	<groupId>com.ibm.spring</groupId>
 	<artifactId>springmvc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<!-- Editar el nombre (name) y la descripción (description) del Proyecto -->
+	
+	<!-- Edit the name and description of the Project -->
 	<name>AwakeLab Maven Spring MVC</name>
-	<description>Proyecto Spring MVC con implementaciones basicas</description>
+	<description>Spring MVC project with basic implementations</description>
 
-	<!-- Propiedades -->
+	<!-- Properties -->
 	<properties>
-		<!-- Codificación del Código Fuente -->
+		
+		<!-- Source Code Encoding -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<!-- Versión Java en la cual fue creado el proyecto -->
+		<!-- Java version in which the project was created -->
 		<maven.compiler.source>1.8</maven.compiler.source>
 
-		<!-- A qué versión de Java está apuntado el proyecto -->
+		<!-- Which version of Java is the project targeting -->
 		<maven.compiler.target>1.8</maven.compiler.target>
 
-		<!-- Versiones de las Dependencias -->
-		<!-- Spring Framework -->
+		<!-- Dependency Versions -->
 		
+		<!-- Spring Framework -->
 		<org.springframework.version>5.3.39</org.springframework.version>
 
 		<!-- Java Servlet API -->
@@ -44,23 +46,19 @@
 		<org.junit.jupiter-version>5.6.2</org.junit.jupiter-version>
 	</properties>
 
-	<!-- Información de el o los Desarrolladores -->
+	<!-- Information about the Developer(s) -->
 	<developers>
-		<!-- Ejemplo -->
+
 		<developer>
-			<!-- Correo electrónico -->
+			
 			<email>awaker@awakelab.cl</email>
 
-			<!-- Identificador único (Nombre de usuario, nickname, etc.) -->
 			<id>Awaker</id>
 
-			<!-- Nombre Completo o Parcial -->
 			<name>Awaker Awakerino</name>
 
-			<!-- Zona horaria donde te encuentras -->
 			<timezone>America/Santiago</timezone>
 
-			<!-- Roles del desarrollador -->
 			<roles>
 				<role>Developer</role>
 				<role>Architect</role>
@@ -70,7 +68,7 @@
 		</developer>
 	</developers>
 
-	<!-- Dependencias -->
+	<!-- Dependencies -->
 	<dependencies>
 		<!-- Spring Framework: Context >
 		https://mvnrepository.com/artifact/org.springframework/spring-context -->
@@ -134,6 +132,7 @@
 			<version>${org.junit.jupiter-version}</version>
 			<scope>test</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
@@ -147,10 +146,10 @@
 	</dependencies>
 
 	<build>
-		<!-- Nombre del archivo final de empaquetado -->
+		<!-- Final packaging file name -->
 		<finalName>${project.artifactId}-${project.version}</finalName>
 
-		<!-- Listado de Plugins a utilizar -->
+		<!-- List of Plugins to Use -->
 		<plugins>
 			<plugin>
 				<artifactId>maven-eclipse-plugin</artifactId>

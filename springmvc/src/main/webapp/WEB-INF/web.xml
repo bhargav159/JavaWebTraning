@@ -4,19 +4,19 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
 	id="WebApp_ID" version="4.0">
 
-	<!-- Definición del contenedor raíz de Spring, compartido por todos los 
-		Servlets y Filtros -->
+	<!-- Definition of the root Spring container, shared by all Servlets and 
+		Filters -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/spring/root-context.xml</param-value>
 	</context-param>
 
-	<!-- Crea el contenedor Spring compartido por todos los Servlets y Filtros -->
+	<!-- Create the Spring container shared by all Servlets and Filters -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
 
-	<!-- Procesa las solicitudes a la aplicación -->
+	<!-- Processes requests to the application -->
 	<servlet>
 		<servlet-name>appServlet</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -29,41 +29,41 @@
 			<param-name>contextConfigLocation</param-name>
 			<param-value>com.ibm.spring</param-value>
 		</init-param>
-		<!-- Parámetros iniciales -->
+		<!-- Initial parameters -->
 		<!-- <init-param> -->
 		<!-- <param-name>contextConfigLocation</param-name> -->
 		<!-- <param-value>/WEB-INF/spring/servlet-context.xml</param-value> -->
 		<!-- </init-param> -->
 
-		<!-- Cargar al iniciar la aplicación -->
+		<!-- Load on application start -->
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 
-	<!-- Mapping del Dispatcher -->
+	<!-- Dispatcher Mapping -->
 	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
-	<!-- Filtro de Codificación -->
+	<!-- Encoding Filter -->
 	<filter>
 		<filter-name>encodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
 
-		<!-- Establecer la codificación -->
+		<!-- Set the encoding -->
 		<init-param>
 			<param-name>encoding</param-name>
 			<param-value>UTF-8</param-value>
 		</init-param>
 
-		<!-- Forzar la codificación -->
+		<!-- Force encoding -->
 		<init-param>
 			<param-name>forceEncoding</param-name>
 			<param-value>true</param-value>
 		</init-param>
 	</filter>
 
-	<!-- Mapping del Filtro -->
+	<!-- Filter Mapping -->
 	<filter-mapping>
 		<filter-name>encodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>

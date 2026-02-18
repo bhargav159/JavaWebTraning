@@ -3,17 +3,27 @@ package com.ibm.springjdbc;
 import java.util.List;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.ibm.springjdbc.config.JDBCConfig;
 import com.ibm.springjdbc.model.Employee;
 import com.ibm.springjdbcbasics.templates.EmployeeJDBCTemplate;
 
 public class Application {
 	public static void main(String[] args) {
-		ApplicationContext context = new ClassPathXmlApplicationContext("springjdbc.xml");
+		
+//		Xml based configuration:
+//		ApplicationContext context = new ClassPathXmlApplicationContext("springjdbc.xml");
+//
+//		EmployeeJDBCTemplate employeeJDBCTemplate = (EmployeeJDBCTemplate) context.getBean("employeeJDBCTemplateBean");
 
-		EmployeeJDBCTemplate employeeJDBCTemplate = (EmployeeJDBCTemplate) context.getBean("employeeJDBCTemplateBean");
-
+		
+//		Java Configuration:
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(JDBCConfig.class);
+		
+		EmployeeJDBCTemplate employeeJDBCTemplate = (EmployeeJDBCTemplate) context.getBean("employeeJDBCTemplateBean"); 
+		
 		System.out.println("-------- Records Creation -----------");
 //		employeeJDBCTemplate.create("Smitha", "Raj", 15000);
 //		employeeJDBCTemplate.create("Allen", "Peter", 18000);
@@ -31,7 +41,7 @@ public class Application {
 
 		}
 
-		employeeJDBCTemplate.update(2, "Allen", "peter", 20000);
+		employeeJDBCTemplate.update(2, "Allen", "peter", 25000);
 
 		Employee employee = employeeJDBCTemplate.getEmployee(2);
 		System.out.println("ID: " + employee.getId());
@@ -39,6 +49,6 @@ public class Application {
 		System.out.println("LastName: " + employee.getLastname());
 		System.out.println("Salary: " + employee.getSalary() + "\n");
 				
-		employeeJDBCTemplate.delete(3);
+//		employeeJDBCTemplate.delete(3);
 	}
 }

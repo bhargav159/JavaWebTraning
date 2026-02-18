@@ -24,12 +24,12 @@ public class EmployeeController {
 	
 	@GetMapping("/form")
 	public String showForm(Model model) {
-		model.addAttribute("employee", new Employee());
+		model.addAttribute("employeee", new Employee());
 		return "employee-form";
 	}
 	
 	@PostMapping("/save")
-	public String saveEmployee(@Valid @ModelAttribute("employee") Employee employee, BindingResult result,
+	public String saveEmployee(@Valid @ModelAttribute("employeeeeee") Employee employee, BindingResult result,
 			RedirectAttributes redirectAttributes) {
 
 		if(result.hasErrors()) {
